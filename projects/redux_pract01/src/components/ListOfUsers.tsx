@@ -11,11 +11,23 @@ import {
 } from "@tremor/react"
 
 //import { useSelector } from "react-redux"
-import { useAppSelector } from "../hooks/store"
+import { useAppDispatch, useAppSelector } from "../hooks/store"
+import { UserId, deleteUserById } from "../store/users/slice"
+import { useUserActions } from "../hooks/useUserActions"
 
 export const ListOfUsers = () => {
   //const users = useSelector((state) => state.usersPepito)
   const users = useAppSelector((state) => state.usersPepito)
+  // const dispatch = useAppDispatch()
+
+  // const handleRemoveUser = (id: UserId) => {
+  //   dispatch(deleteUserById(id))
+  // }
+
+  const { removeUser } = useUserActions()
+  const handleRemoveUser = (id: UserId) => {
+    removeUser(id)
+  }
 
   return (
     <div className="mx-auto max-w-2xl">
@@ -70,8 +82,12 @@ export const ListOfUsers = () => {
                       />
                     </svg>
                   </button>
-                  <button type="button">
+                  <button
+                    onClick={() => handleRemoveUser(item.id)}
+                    type="button"
+                  >
                     <svg
+                      aria-label="Remove element"
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
