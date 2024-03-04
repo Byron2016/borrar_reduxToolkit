@@ -1,0 +1,19 @@
+{
+        "folders": [
+                {
+                        "path": "."
+                },
+                {
+                        "path": "projects/vanilla"
+                },
+                {
+                        "path": "projects/z_vanilla"
+                },
+                {
+                        "path": "projects/astro_aa"
+                }
+        ],
+        "settings": {
+                "eslint.workingDirectories": ["./projects/vanilla"]
+        }
+}
