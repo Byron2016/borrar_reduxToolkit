@@ -4,16 +4,10 @@
                         "path": "."
                 },
                 {
-                        "path": "projects/vanilla"
-                },
-                {
-                        "path": "projects/z_vanilla"
-                },
-                {
-                        "path": "projects/astro_aa"
+                        "path": "projects/redux_pract01"
                 }
         ],
         "settings": {
-                "eslint.workingDirectories": ["./projects/vanilla"]
+                "eslint.workingDirectories": ["./projects/redux_pract01"]
         }
 }
