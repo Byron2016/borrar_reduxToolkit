@@ -1,13 +1,16 @@
 {
-        "folders": [
-                {
-                        "path": "."
-                },
-                {
-                        "path": "projects/redux_pract01"
-                }
-        ],
-        "settings": {
-                "eslint.workingDirectories": ["./projects/redux_pract01"]
-        }
+  "folders": [
+    {
+      "path": "."
+    },
+    {
+      "path": "projects/redux_pract01"
+    },
+    {
+      "path": "projects/10-crud-redux"
+    }
+  ],
+  "settings": {
+    "eslint.workingDirectories": ["./projects/redux_pract01"]
+  }
 }
